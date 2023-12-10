@@ -1,15 +1,18 @@
 window.onload = () => {
-  let registerUser = document.getElementById("registerBtn");
+  let registerUserBtn = document.getElementById("registerationForm");
 
-  registerUser.onclick = () => {
+  registerUserBtn.onsubmit = () => {
+
     let name = document.getElementById("name").value;
     let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
 
     let user = {
-      name: name,
-      username: username,
+      'name': name,
+      'username': username,
+      'password': password
     };
-    
+
     // console.log(user)
 
     fetch(`http://localhost:8083/api/users`, {
@@ -24,7 +27,7 @@ window.onload = () => {
         console.log("User Registered:", data);
         alert("User registered successfully!");
 
-        window.location.href = "index.html";
+        // window.location.href = "index.html";
       });
   };
 };
