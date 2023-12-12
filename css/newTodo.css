@@ -1,4 +1,4 @@
-body, h2, label, input, button, form {
+body, h2, label, select, textarea, input, form {
   margin: 0;
   padding: 0;
 }
@@ -15,7 +15,7 @@ h2 {
   margin: 20px 0;
 }
 
-form {
+form{
   max-width: 400px;
   margin: 20px auto;
   background-color: #fff;
@@ -29,17 +29,17 @@ label{
   margin: 10px 0;
 }
 
-input{
+select,textarea,input{
   width: 95%;
   padding: 10px;
   margin: 5px 0 20px 0;
 }
 
-button{
+input[type="submit"]{
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: black;
+  background-color: #000000;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -47,6 +47,6 @@ button{
   transition: background-color 0.3s ease;
 }
 
-button:hover{
-  background-color: #525050;
+input[type="submit"]:hover{
+  background-color: #535355;
 }

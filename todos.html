@@ -1,21 +1,36 @@
+<!-- Amaris Nichole Code -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/todos.css">
-    <title>Stay Organized</title>
-</head>
-<body>
-    <h1>Welcome to the ToDo Task</h1>
-    
-    <label for="userDropdown">Select a User:</label>
-    <select id="userDropdown"></select>
+    <title>Todo Tasks</title>
+    <link href="css/todo.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <a href="./index.html">Home</a>
+        <a class="active" href="./todos.html">ToDo Tasks</a>
+        <a href="new_todo.html">Add New Task</a>
+        <a href="new_user.html">Register</a>
+      </div>
+    </nav>
 
-    <button id="viewTasksBtn">View User's ToDo</button>
+    <h1>Todo Tasks</h1>
 
-    <ul id="tasksList"></ul>
+    <label for="user-dropdown">Select a User:</label>
+    <select id="user-dropdown"></select>
+    <button id="user-id-submit">View tasks</button>
+    <div id="tasks-list" class="tasks-list">
+      <!-- Tasks will be displayed here -->
+    </div>
+
+    <footer>
+      <p>&copy; 2023 Stay Organized. All rights reserved.</p>
+    </footer>
 
     <script src="scripts/todos.js"></script>
-</body>
+  </body>
 </html>
